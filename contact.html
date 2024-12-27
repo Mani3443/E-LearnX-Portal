@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-LearnX Internship Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #1e3c72, #c2e9fb);
+            font-size: 50px;
+            color: #e0f7fa;
+            text-align: center;
+            height: 70px;
+            line-height: 70px;
+        }
+        .nav {
+            background: linear-gradient(135deg, #14387b, #c0eafe);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .nav a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            color: #ffffff;
+            padding-left: 69.75px;
+            padding-right: 69.75px;
+            margin: -4px;
+        }
+        .nav a:hover {
+            color: #001f3f;
+        }
+        .ct {
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            margin: 0px 200px;
+            color: #000000;
+        }
+        .ct::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://stickyandsweet.co.za/wp-content/uploads/2020/02/ContactA-768x564.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.05;
+            z-index: 1;
+        }
+        .ct .content {
+            position: relative;
+            z-index: 2;
+            color: #000000;
+        }
+        .ct1 {
+            font-size: 36px;
+            color: #5800fc;
+        }
+        .ct2 {
+            font-size: 18px;
+            color: #000000;
+            margin-top: 10px;
+        }
+        .sa {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .ad0 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .ad {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .ad1 {
+            margin-right: 10px;
+        }
+        .ii {
+            height: 50px;
+            width: 50px;
+            padding-right: 70px;
+        }
+        .ad3 {
+            font-size: 20px;
+            color: #4169E1;
+        }
+        .ad4 {
+            font-size: 16px;
+            color: #333;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #000;
+            box-shadow: 10px 10px 10px 0px hsla(0, 1%, 53%, 0.75);
+            width: 350px;
+            height: 350px;
+        }
+        .c1 {
+            margin: 10px 0;
+        }
+        .fr {
+            font-size: 24px;
+            color: #4169E1;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 300px;
+            padding: 10px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #4169E1;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #27408b;
+        }
+        footer {
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #8eb5ff, #c0eafe);
+            padding: 10px 0;
+        }
+        footer .mani {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        footer .first {
+            font-size: 30px;
+            padding-left: 40px;
+            text-align: left;
+        }
+        footer .second {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+        }
+        footer .second img {
+            margin: 0 10px;
+            height: 50px;
+            width: 50px;
+        }
+        #aaa{
+            padding-left: 33px;
+        }
+        #aaaa{
+            padding-left: 79px;
+        }
+        #in1{
+            padding-right: 97px;
+        }
+        #in2{
+            padding-right: 29px;
+        }
+        @media (max-width: 768px) {
+            .sa {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ad0 {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .form {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">E-LearnX Internship Portal</nav>
+    <nav class="nav">
+        <a href="index.html" class="active-link">Home</a>
+        <a href="inter.html" class="active-link">Internship</a>
+        <a href="reward.html" class="active-link">Rewards</a>
+        <a href="about.html" class="active-link">About Us</a>
+        <a href="contact.html" class="active-link">Contact Us</a>
+    </nav>
+    <div class="ct">
+        <div class="content">
+            <h1 class="ct1">Contact Us</h1>
+            <p class="ct2"><i>Reach out to our dedicated team for any inquiries, assistance, or information you need</i></p>
+            <div class="sa">
+                <div class="ad0">
+                    <div class="ad">
+                        <div class="ad1">
+                            <img src="nnn.png" class="ii" id="aaa" alt="Location">
+                        </div>
+                        <div class="ad2">
+                            <p class="ad3" id="in2"><b>Address</b></p>
+                            <p class="ad4">1-16 Abc Road<br>XYZ, Andhra Pradesh<br>515151</p>
+                        </div>
+                    </div>
+                    <div class="ad">
+                        <div class="ad1">
+                            <img src="mm.png" class="ii" alt="Contact">
+                        </div>
+                        <div class="ad2">
+                            <p class="ad3"><b>Contact</b></p>
+                            <p class="ad4">+91 6304174501</p>
+                        </div>
+                    </div>
+                    <div class="ad">
+                        <div class="ad1">
+                            <img src="gmail.png" class="ii" id="aaaa" alt="Email">
+                        </div>
+                        <div class="ad2">
+                            <p class="ad3" id="in1"><b>Gmail</b></p>
+                            <p class="ad4">internships@elearnx.portal.in</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <form>
+                        <div class="c1">
+                            <h1 class="fr">Send Message</h1>
+                        </div>
+                        <div class="c1">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="c1">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="c1">
+                            <textarea placeholder="send your feedback and any complaints regarding internship..." required></textarea>
+                        </div>
+                        <div class="c1">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="mani">
+            <div class="first">
+                <h2>E-<span>LearnX</span></h2>
+            </div>
+            <div class="second">
+                <img src="social.png" class="insta" height="auto" width="50px" alt="Instagram">
+                <img src="facebook.png" class="fb" height="auto" width="50px" alt="Facebook">
+                <img src="twitter.png" class="tw" height="auto" width="50px" alt="Twitter">
+                <img src="linkedin.png" class="li" height="auto" width="50px" alt="LinkedIn">
+                <img src="gmail.png" class="m" height="auto" width="50px" alt="Gmail">
+            </div>
+        </div>
+        <p>CopyRight &copy; 2025 E-LearnX. All rights reserved.</p>
+    </footer>
+    <script>
+// these is used to handle the form inside these page regarding the message they want to convey
+document.querySelector('.form form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const fullName = document.querySelector('input[placeholder="Full Name"]').value;
+    const email = document.querySelector('input[placeholder="Email"]').value;
+    const message = document.querySelector('textarea[placeholder="send your feedback and any complaints regarding internship..."]').value;
+    // Store data in local storage and these saved data will be displayed in the display.html page
+    localStorage.setItem('fullName', fullName);
+    localStorage.setItem('contactEmail', email);
+    localStorage.setItem('message', message);
+    alert("Message sent successfully!");
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .input-group input, 
+        .input-group select {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .input-group input:focus,
+        .input-group select:focus {
+            outline-color: #6c5ce7;
+            border-color: #6c5ce7;
+        }
+        .payment-section h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .payment-section .input-group label {
+            font-size: 14px;
+            color: #333;
+        }
+        .payment-section .input-group input {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .submit-btn {
+            border: none;
+            background: #ea1538;
+            padding: 12px;
+            border-radius: 30px;
+            color: #efeeee;
+            font-weight: bold;
+            width: 200px;
+            margin-left: 180px;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        .submit-btn:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Course Registration</h2>
+        <form action="#" method="POST" class="registration-form" id="course-registration-form">
+            <div class="input-group">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="course">Select Course:</label>
+                <select name="course" required>
+                    <option value="">-- Select a Course --</option>
+                    <option value="webdev">Web Development - $299</option>
+                    <option value="ml">Machine Learning - $299</option>
+                    <option value="cybersecurity">Cybersecurity - $499</option>
+                    <option value="datascience">Data Science - $399</option>
+                    <option value="digitalmarketing">Digital Marketing - $349</option>
+                    <option value="ai">Artificial Intelligence - $499</option>
+                    <option value="mobileapp">Mobile Application - $449</option>
+                    <option value="uiux">UI/UX Design - $399</option>
+                    <option value="blockchain">Blockchain Development - $400</option>
+                    <option value="contentwriting">Content Writing - $499</option>
+                </select>
+            </div>
+            <div class="payment-section">
+                <h3>Payment Information</h3>
+                <div class="input-group">
+                    <label for="card-number">Credit Card Number:</label>
+                    <input type="text" name="card-number" placeholder="Enter your card number" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">CVV:</label>
+                    <input type="paasword" name="cvv" placeholder="Enter CVV" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Register and Pay</button>
+        </form>
+    </div>
+    <script>
+        // Function to handle form submission for course registration
+        document.querySelector('#course-registration-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const course = document.querySelector('select[name="course"]').value;
+            const cardNumber = document.querySelector('input[name="card-number"]').value;
+            const cvv = document.querySelector('input[name="cvv"]').value;
+            // Perform form validation and payment processing here as the form is submitted in it
+            // Store data in local storage and saved 
+            localStorage.setItem('name', name);
+            localStorage.setItem('email', email);
+            localStorage.setItem('course', course);
+            localStorage.setItem('cardNumber', cardNumber);
+            localStorage.setItem('cvv', cvv);
+
+            alert("Course registration successful!");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Stored Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .data-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .data-item {
+            margin-bottom: 15px;
+        }
+        .data-item label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .data-item span {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="data-container">
+        <h2>Stored Data</h2>
+        <div class="data-item">
+            <label for="username">Username:</label>
+            <span id="username"></span>
+        </div>
+        <div class="data-item">
+            <label for="email">Email:</label>
+            <span id="email"></span>
+        </div>
+        <div class="data-item">
+            <label for="password">Password:</label>
+            <span id="password"></span>
+        </div>
+        <div class="data-item">
+            <label for="course">Course:</label>
+            <span id="course"></span>
+        </div>
+        <div class="data-item">
+            <label for="cardNumber">Card Number:</label>
+            <span id="cardNumber"></span>
+        </div>
+        <div class="data-item">
+            <label for="cvv">CVV:</label>
+            <span id="cvv"></span>
+        </div>
+        <div class="data-item">
+            <label for="fullName">Full Name:</label>
+            <span id="fullName"></span>
+        </div>
+        <div class="data-item">
+            <label for="contactEmail">Contact Email:</label>
+            <span id="contactEmail"></span>
+        </div>
+        <div class="data-item">
+            <label for="message">Message:</label>
+            <span id="message"></span>
+        </div>
+    </div>
+    <script>
+        // Function to display stored data
+        function displayStoredData() {
+            document.getElementById('username').textContent = localStorage.getItem('username') || 'N/A';
+            document.getElementById('email').textContent = localStorage.getItem('email') || 'N/A';
+            document.getElementById('password').textContent = localStorage.getItem('password') || 'N/A';
+            document.getElementById('course').textContent = localStorage.getItem('course') || 'N/A';
+            document.getElementById('cardNumber').textContent = localStorage.getItem('cardNumber') || 'N/A';
+            document.getElementById('cvv').textContent = localStorage.getItem('cvv') || 'N/A';
+            document.getElementById('fullName').textContent = localStorage.getItem('fullName') || 'N/A';
+            document.getElementById('contactEmail').textContent = localStorage.getItem('contactEmail') || 'N/A';
+            document.getElementById('message').textContent = localStorage.getItem('message') || 'N/A';
+        }
+
+        // Call the function to display stored data when the page loads
+        window.onload = displayStoredData;
+    </script>
+</body>
+</html>
+

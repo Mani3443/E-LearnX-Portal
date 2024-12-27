@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-LearnX Internship Offerings</title>
+    <meta name="description" content="E-LearnX Internship Offerings - Discover high-demand internships with descriptions, requirements, and apply buttons.">
+    <meta name="keywords" content="internships, high-demand, skills, E-LearnX, students, industry leaders">
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #1e3c72, #c2e9fb);
+            font-size: 50px;
+            color: #e0f7fa;
+            text-align: center;
+            height: 70px;
+            line-height: 70px;
+        }
+        .nav {
+            background: linear-gradient(135deg, #14387b, #c0eafe);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .nav a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            color: #ffffff;
+            padding-left: 69.75px;
+            padding-right: 69.75px;
+            margin: -4px;
+        }
+        .nav a:hover {
+            color: #001f3f;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(74, 145, 226);
+        }
+        .internship-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 25px 10px;
+        }
+        .internship {
+            text-align: center;
+            margin: 20px;
+            flex: 1 1 30%;
+            background-color: #ffffff;
+            padding-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideIn 3s ease-in-out;
+        }
+        .internship:nth-child(odd) {
+            animation-name: slideInLeft;
+        }
+        .internship:nth-child(even) {
+            animation-name: slideInRight;
+        }
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .internship:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .internship img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .internship h2 {
+            font-size: 24px;
+            color: #4169E1;
+            margin-top: 10px;
+        }
+        .internship p {
+            font-size: 16px;
+            color: #333;
+            margin-top: 5px;
+        }
+        .internship button {
+            font-family: 'Poppins', sans-serif;
+            padding: 5px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #4169E1;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 5px;
+        }
+        .internship a{
+            text-decoration: none;
+            color: white;
+        }
+        .internship button:hover {
+            background-color: #27408b;
+        }
+        footer {
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #8eb5ff, #c0eafe);
+            padding: 10px 0;
+        }
+        footer .mani {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        footer .first {
+            font-size: 30px;
+            padding-left: 40px;
+            text-align: left;
+        }
+        footer .second {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+        }
+        footer .second img {
+            margin: 0 10px;
+            height: 50px;
+            width: 50px;
+        }
+        @media (max-width: 768px) {
+            .internship-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .internship {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">E-LearnX Internship Portal</nav>
+    <nav class="nav">
+        <a href="index.html" class="active-link">Home</a>
+        <a href="inter.html" class="active-link">Internship</a>
+        <a href="reward.html" class="active-link">Rewards</a>
+        <a href="about.html" class="active-link">About Us</a>
+        <a href="contact.html" class="active-link">Contact Us</a>
+    </nav>
+    <div class="content">
+        <h1>Internship Offerings</h1>
+        <p>To attract students with diverse skills, the following internships are in high demand:</p>
+        <div class="internship-section">
+            <div class="internship">
+                <img src="https://miro.medium.com/v2/resize:fit:800/0*ZEPJsASfB2z7hi_0" alt="Full-Stack Web Development" height="10px" width="350px">
+                <h2>Full-Stack Web Development</h2>
+                <p><strong>Skills:</strong> HTML, CSS, JavaScript, React.js, Node.js.</p>
+                <p><strong>Description:</strong> Develop and maintain web applications.</p>
+                <button><a href="form.html">Apply Now</a></button>
+                <br>
+                <br>
+            </div>
+            <div class="internship">
+                <img src="https://thumbs.dreamstime.com/b/iot-cyber-security-padlock-concept-personal-data-safety-internet-things-smart-home-attack-hacker-danger-firewall-innovation-141584329.jpg?w=360" alt="Cybersecurity Analyst" widht="10px" height="10px">
+                <h2>Cybersecurity Analyst</h2>
+                <p><strong>Skills:</strong> Network security, penetration testing, cryptography.</p>
+                <p><strong>Description:</strong> Identify and address security vulnerabilities.</p>
+                <button><a href="form.html">Apply Now</a></button>
+                <br><br>
+            </div>
+            <div class="internship">
+                <img src="https://thumbs.dreamstime.com/b/data-science-business-internet-technology-concept-server-room-background-data-science-business-internet-technology-135135033.jpg" alt="Data Science Intern" width="320px">
+                <h2>Data Science Intern</h2>
+                <p><strong>Skills:</strong> Python, machine learning, data analysis.</p>
+                <p><strong>Description:</strong> Analyze data to generate actionable insights.</p>
+                <button><a href="form.html">Apply Now</a></button><br><br>
+            </div>
+            <div class="internship">
+                <img src="https://img.freepik.com/premium-photo/creative-blue-devices-hologram-with-tiny-businesspeople-blurry-backdrop-digital-marketing-social-network-online-service-concept_670147-60984.jpg" alt="Digital Marketing Intern" width="340px">
+                <h2>Digital Marketing Intern</h2>
+                <p><strong>Skills:</strong> SEO, content creation, social media marketing.</p>
+                <p><strong>Description:</strong> Increase brand awareness through digital channels.</p>
+                <button><a href="form.html">Apply Now</a></button><br><br>
+            </div>
+            <div class="internship">
+                <img src="https://i.pinimg.com/736x/1c/99/df/1c99dfdd60cf8b7adf007284df9c9e27.jpg" alt="Mobile App Development" width="310px">
+                <h2>Mobile App Development</h2>
+                <p><strong>Skills:</strong> Flutter, Android, iOS development.</p>
+                <p><strong>Description:</strong> Develop and improve mobile applications.</p>
+                <button><a href="form.html">Apply Now</a></button>
+            </div>
+            <div class="internship">
+                <img src="https://th.bing.com/th/id/OIP.5gJGNJ1J6hpGPO0m4ZpInAHaE_?pid=ImgDet&w=184&h=123&c=7&dpr=1.3" alt="AI/ML Engineering Intern" width="350px">
+                <h2>AI/ML Engineering Intern</h2>
+                <p><strong>Skills:</strong> Machine learning algorithms, deep learning.</p>
+                <p><strong>Description:</strong> Build AI-driven solutions for real-world problems.</p>
+                <button><a href="form.html">Apply Now</a></button>
+            </div>
+            <div class="internship">
+                <img src="https://miro.medium.com/v2/resize:fit:1358/1*8WujSFHRKkIn0fgjixKzJA.jpeg" alt="UI/UX Design Intern" width="330px">
+                <h2>UI/UX Design Intern</h2>
+                <p><strong>Skills:</strong> Adobe XD, Figma, prototyping.</p>
+                <p><strong>Description:</strong> Design and improve user interfaces.</p>
+                <button><a href="form.html">Apply Now</a></button><br><br>
+            </div>
+            <div class="internship">
+                <img src="https://th.bing.com/th/id/OIP.X8XzvMAM9rXygjutJeBWoQHaE7?rs=1&pid=ImgDetMain" alt="Blockchain Development" width="330px">
+                <h2>Blockchain Development</h2>
+                <p><strong>Skills:</strong> Solidity, smart contracts, Ethereum.</p>
+                <p><strong>Description:</strong> Develop decentralized applications.</p>
+                <button><a href="form.html">Apply Now</a></button>
+            </div>
+            <div class="internship">
+                <img src="https://kellygriffin.com/wp-content/uploads/2017/12/content-writing-editting-services.jpg" alt="Content Writing and Editing" width="380px">
+                <h2>Content Writing and Editing</h2>
+                <p><strong>Skills:</strong> Writing, editing, content strategy.</p>
+                <p><strong>Description:</strong> Create and edit content for websites and blogs.</p>
+                <button><a href="form.html">Apply Now</a></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="mani">
+            <div class="first">
+                <h2>E-<span>LearnX</span></h2>
+            </div>
+            <div class="second">
+                <img src="social.png" class="insta" alt="Instagram">
+                <img src="facebook.png" class="fb" alt="Facebook">
+                <img src="twitter.png" class="tw" alt="Twitter">
+                <img src="linkedin.png" class="li" alt="LinkedIn">
+                <img src="gmail.png" class="m" alt="Gmail">
+            </div>
+        </div>
+        <p>CopyRight &copy; 2025 E-LearnX. All rights reserved.</p>
+    </footer>
+    <script src="script.js">
+    </script>
+    </body>
+    </html>
